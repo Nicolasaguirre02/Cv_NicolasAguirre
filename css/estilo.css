@@ -107,3 +107,108 @@ main{
 }
 /* Fin contenido princiapal */
 
+
+
+/* Acerca de mi */
+#acercaDeMi{
+    height: 70vh;
+    background-color: rgb(25, 25, 25) ;
+}
+
+#contenedorimagen{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+#contenedorimagen #acercaDeMi_imagen{
+    width: 55%;
+    height: 80%;
+}
+#contenedorimagen #acercaDeMi_imagen #imagenInformacionPersonal{
+    background-color: #00AAE4;
+    width: 40vh;
+    height: 50vh;
+    border-radius: 8px;
+    box-shadow: 15px 15px 5px white;
+}
+
+
+
+#contenedordatosPersonales{
+    display: grid   ;
+    height: 100%;
+    grid-template-rows: 200px 230px;
+    
+}
+#contenedordatosPersonales #infromacionAcercaDeMi{
+    width: 100%;
+    padding: 5px;
+}
+#contenedordatosPersonales #infromacionAcercaDeMi h2{
+    color: white;
+}
+#contenedordatosPersonales #infromacionAcercaDeMi p{
+    color: wheat;
+    text-indent: 50px; /*  sangría */
+    line-height: 1.6;
+    padding-left: 5%;
+}
+
+/* Datos personales */
+#contenedordatosPersonales #datosPersonales{
+    border: 2px solid #00AAE4;
+    width: 100%;    
+    color: white;
+    padding: 5px;
+}
+
+table tr td{
+    padding: 5px;
+    padding-left: 10%;
+}
+
+table tr td:first-child{
+    color: #00AAE4;
+}
+
+.btnCv{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.btnCv button{
+    color: #00AAE4;
+    border: 1px solid #00AAE4;
+}
+
+
+/* Fin acerca de mi */
+
+
+
+
+@media (max-width:758px){
+    #contenedordatosPersonales{
+        margin-top: 20%;
+        grid-template-rows: 350px 230px;
+    }
+
+    #acercaDeMi{
+        height: 1200px;
+    }
+
+    .btnCv{
+        justify-content: center;
+    }
+
+    
+}
+
+@media (max-width:500px){
+    #contenedorimagen #acercaDeMi_imagen #imagenInformacionPersonal{
+        width: 20vh;
+        height: 30vh;
+    }
+}
