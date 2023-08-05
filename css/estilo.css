@@ -12,7 +12,7 @@
 
 /* barra nav */
 .navbar{
-    background-color: rgb(25, 25, 25);
+    background-color: #272727;
 }
 
 .navbar #navbarNav li a{
@@ -72,7 +72,7 @@ main{
 #tarjetaPrincipal #cuadroPrincipal{
     width: 100%;
     height: 75%;
-    background-color: rgb(25, 25, 25) ;
+    background-color: #272727 ;
     border-radius: 40px;
 
     position: relative;
@@ -111,8 +111,11 @@ main{
 
 /* Acerca de mi */
 #acercaDeMi{
-    height: 70vh;
-    background-color: rgb(25, 25, 25) ;
+    background-color: #303030 ;
+    padding-top: 80px;
+    padding-bottom: 200px;
+
+    position: relative;
 }
 
 #contenedorimagen{
@@ -148,6 +151,8 @@ main{
 }
 #contenedordatosPersonales #infromacionAcercaDeMi h2{
     color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
 }
 #contenedordatosPersonales #infromacionAcercaDeMi p{
     color: white;
@@ -188,27 +193,124 @@ table tr td:first-child{
 
 
 
+/* curriculum */
+
+
+
+.contenedorCV{
+    background-color: #272727;
+    color: white;
+    padding-bottom: 40px;
+    border: 1px solid #272727;
+}
+
+.contenedorCV h2{
+    margin-top: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+#educacion{
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    gap: 20px 70px;
+    padding-top: 50px;
+}
+
+#educacion .experiencia{
+    /* border: 1px solid blue; */
+    text-align: left;
+}
+
+#educacion .experiencia h3{
+    color: #00AAE4;
+    font-weight: 800;
+}
+#educacion .experiencia h4{
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+#educacion .experiencia_left{
+    text-align: right;
+}
+
+
+.linea{
+    background-color: #00AAE4;
+    position: relative;
+}
+
+.linea::before, 
+.linea::after{
+    background-color: #00AAE4;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -9px;
+}
+
+.linea::after{
+    top: 100%;
+}
+
+
+/* Fin curriculum */
+
 
 @media (max-width:758px){
     #contenedordatosPersonales{
         margin-top: 20%;
-        grid-template-rows: 350px 230px;
-    }
-
-    #acercaDeMi{
-        height: 1200px;
+        grid-template-rows: 350px 280px;
     }
 
     .btnCv{
         justify-content: center;
+        padding-top: 5%;
+    }
+
+    /* barra nav */
+    .navbar{
+        text-align: center;
     }
 
     
 }
 
 @media (max-width:500px){
+
+    #acercaDeMi{
+        padding-bottom: 100px;
+    }
+
     #contenedorimagen #acercaDeMi_imagen #imagenInformacionPersonal{
         width: 20vh;
         height: 30vh;
     }
+
+    #educacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 0px;
+        
+        
+    }   
+    
+    .linea{
+        display: none;
+    }
+
+    #educacion .experiencia{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    #educacion .experiencia_left{
+        text-align: left;
+    }
 }
+
