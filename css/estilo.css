@@ -113,7 +113,7 @@ main{
 #acercaDeMi{
     background-color: #303030 ;
     padding-top: 80px;
-    padding-bottom: 200px;
+    padding-bottom: 50vh;
 
     position: relative;
 }
@@ -200,7 +200,6 @@ table tr td:first-child{
 .contenedorCV{
     background-color: #272727;
     color: white;
-    padding-bottom: 40px;
     border: 1px solid #272727;
 }
 
@@ -257,9 +256,233 @@ table tr td:first-child{
 .linea::after{
     top: 100%;
 }
-
-
 /* Fin curriculum */
+
+
+/* Seccion habilidades  */
+
+#seccionHabilidades{
+    position: relative;
+    padding-top: 60vh;
+    padding-bottom: 60px;
+    background-color: #303030 ;
+    
+}
+
+#tituloHabilidades{
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+#seccionHabilidades  .contenedorHabilidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#seccionHabilidades  .contenedorHabilidad .tipoHabilidad{
+    color: white;
+    font-weight: 600;
+    padding-top: 90px;
+}
+
+#seccionHabilidades  .contenedorHabilidad h3{
+    color: white;
+    font-weight: 600;
+}
+
+
+#seccionHabilidades  .contenedorHabilidad .habilidad{
+    width: 50%;
+}
+
+#seccionHabilidades   .habilidad .tituloIconos{
+    display: flex;
+    align-items: center;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos h3{
+    font-size: 2vh;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .iconos{
+    font-size: 6vh;
+    margin: 10px; 
+}
+
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_html{
+    color: #DD4B25;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_css{
+    color: #2862E9;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_js{
+    color: #EFD81D;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_sql{
+    color: gray;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_angular{
+    color: #BD002E;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_bs{
+    color: #8210F5;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_comunicacion{
+    color: #8210F5;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_equipo{
+    color: #8210F5;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_adaptabilidad{
+    color: yellow;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_creatividad{
+    color: yellow;
+}
+
+
+#seccionHabilidades  .contenedorHabilidad .habilidad h3{
+    margin-bottom: 10px;
+}
+
+#seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad{
+    height: 8px;
+    width: 80%;
+    background-color: gray;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+
+
+
+
+#seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .progreso{
+   background-color: #00AAE4;
+   border-radius: 12px;
+   position: absolute;
+   top: 0px;
+   left: 0;
+   height: 8px;
+   width: 0%;
+   animation: 2s animacion forwards;
+}
+#seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .html{
+    width: 0%;
+    animation: 2s html forwards;
+ }
+ #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .css{
+    width: 0%;
+    animation: 2s css forwards;
+ }
+ #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .js{
+    width: 0%;
+    animation: 2s js forwards;
+ }
+ #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+ }
+ #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .angular{
+    width: 0%;
+    animation: 2s angular forwards;
+ }
+ #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .bs{
+    width: 0%;
+    animation: 2s bs forwards;
+ }
+ #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+ }
+ #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .equipo{
+    width: 0%;
+    animation: 2s equipo forwards;
+ }
+ #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .adaptabilidad{
+    width: 0%;
+    animation: 2s adaptabilidad forwards;
+ }
+ #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+ }
+
+@keyframes html{
+    0%{width:0%}
+    100%{width: 90%;}
+}
+@keyframes css{
+    0%{width:0%}
+    100%{width: 80%;}
+}
+@keyframes js{
+    0%{width:0%}
+    100%{width: 80%;}
+}
+@keyframes sql{
+    0%{width:0%}
+    100%{width: 90%;}
+}
+@keyframes angular{
+    0%{width:0%}
+    100%{width: 50%;}
+}
+@keyframes bs{
+    0%{width:0%}
+    100%{width: 78%;}
+}
+
+@keyframes comunicacion{
+    0%{width:0%}
+    100%{width: 95%;}
+}
+@keyframes equipo{
+    0%{width:0%}
+    100%{width: 90%;}
+}
+@keyframes adaptabilidad{
+    0%{width:0%}
+    100%{width: 95%;}
+}
+@keyframes creatividad{
+    0%{width:0%}
+    100%{width: 90%;}
+}
+
+
+
+#seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .progreso span{
+   position: absolute;
+   height: 40px;
+   width: 40px;
+   background-color: #272727;
+   border: 1px solid #00AAE4;
+   color: white;
+   border-radius: 50px;
+   line-height: 35px;
+   text-align: center;
+   top: -17px;
+   right: -15px;
+   font-size: 14px;
+
+ }
+
+
+
+
+
+
+
+/* Fin habilidades */
 
 
 @media (max-width:758px){
@@ -278,14 +501,21 @@ table tr td:first-child{
         text-align: center;
     }
 
+
+    #acercaDeMi{
+        padding-bottom: 20vh;
+    }
+
+    #seccionHabilidades{
+        padding-top: 20vh;
+        
+    }
     
 }
 
 @media (max-width:500px){
 
-    #acercaDeMi{
-        padding-bottom: 100px;
-    }
+    
 
     #contenedorimagen #acercaDeMi_imagen #imagenInformacionPersonal{
         width: 20vh;
@@ -312,5 +542,15 @@ table tr td:first-child{
     #educacion .experiencia_left{
         text-align: left;
     }
+
+
+    #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .progreso span{
+        height: 35px;
+        width: 35px;
+        top: -15px;
+        right: -10px;
+        font-size: 12px;
+     
+      }
 }
 
