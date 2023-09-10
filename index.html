@@ -44,7 +44,7 @@
                     <a class="nav-link active" aria-current="page" href="#seccionHabilidades">Habilidades</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                    <a class="nav-link active" aria-current="page" href="#contenedorfomrulario">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -404,13 +404,105 @@
 
       <!-- Fin Habilidades -->
 
+      <!-- Seccion formulario -->
+      <div class="row" id="contenedorfomrulario">
+        <h2 id="tituloHabilidades">Contáctame</h2>
+
+        <section class="row" id="infoPersonal">
+
+        
+
+            <div class="col-md-4 d-flex justify-content-center contInfo ">
+                <div class="contenedorInfoPersonal text-center">
+                    <svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                    <h2 class="tituloIcono" >Celular</h2>
+                    <p>3425534637</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center contInfo contMedio" >
+                <div class="contenedorInfoPersonal text-center contenedorInfoPersonal-m">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg>
+                    <h2 class="tituloIcono" >Direccion</h2>
+                    <p>Av. Blas Parera, Santa Fe Capital</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex justify-content-center contInfo" >
+                <div class="contenedorInfoPersonal text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg>
+                    <h2 class="tituloIcono" >Mail</h2>
+                    <p>nico.aguirre02@hotmail.com</p>
+                </div>
+            </div>
+
+        </section>
+
+      <div class="row">
+
+        <div class="col-md-6 d-flex justify-content-center" >
+            <form id="formulario" action="#" method="POST">
+                <div class="form-group">
+                    <input name="nombre" autocomplete="off" type="text" class="form-control input" id="nombre" aria-describedby="emailHelp" placeholder="Nombre">
+                    <p class="aviso avisoNombre">* Completar nombre</p>
+                </div>
+
+                <div class="form-group">
+                  <input name="mail" autocomplete="off" type="email" class="form-control input" id="mail" aria-describedby="emailHelp" placeholder="Mail">
+                  <p class="aviso avisoMail">* Ingrese mail valido</p>
+                </div>
+
+                <div class="form-group">
+                    <input name="telefono" autocomplete="off" type="number" class="form-control input" id="telefono" aria-describedby="emailHelp" placeholder="Telefono">
+                    <p class="aviso avisoTelefono">* Completar telefono</p>
+                </div>
+
+                <div class="form-group">
+                    <input name="tema" autocomplete="off" type="text" class="form-control input" id="tema" aria-describedby="emailHelp" placeholder="Tema">
+                    <p class="aviso avisoTema">* Completar tema</p>
+                </div>
+
+                <div class="form-group">
+                    <textarea name="descripcion" autocomplete="off" class="form-control input" id="descripcion" rows="3" placeholder="Descripcion"></textarea>
+                    <p class="aviso avisoDescripcion">* Completar descripcion</p>
+                </div>
+                
+               
+                <button type="submit" id="btnEnviar" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                      </svg>
+                    Enviar
+                </button>
+              </form>
+
+        </div>
+
+
+        <div class="col-md-6 d-flex justify-content-center" id="contenedorMapa">
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108717.91189950515!2d-60.74498825781802!3d-31.62194501239517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9adc40888e1%3A0xdcf7761e8d02804a!2sSanta%20Fe%20de%20la%20Vera%20Cruz%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1694027759958!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </div>
+
+      <!-- Fin seccion fomrulario -->
+
+  
 
    
 
 
 
     <!-- importar script bootstrap -->
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

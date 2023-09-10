@@ -459,6 +459,122 @@ table tr td:first-child{
 }
 
 
+/* Seccion formulario */
+
+#contenedorfomrulario{
+    background-color: #303030   ;
+}
+
+.bi{
+    color: #00AAE4;
+}
+
+
+#formulario{
+    width: 70%;
+}
+
+.form-group{
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.form-group .input{
+    border: none;
+    border-bottom: 1px solid #00AAE4;
+    background-color: transparent;
+    outline: none;
+    border-radius: 0px;
+    transition: transform 0.2s ease-in-out; 
+    color: white;
+}
+
+.form-group .input:focus{
+    outline: none; /* Eliminar el borde al enfocar */
+    box-shadow: none; /* Eliminar la sombra al enfocar */
+    border-color: initial; /* Utiliza el color de borde inicial (sin estilos) */
+    border-bottom: 3px solid #00AAE4;
+    transform: scale(1.02); /* Aumenta el tamaño ligeramente */
+    background-color: transparent;
+    color: white;
+}
+
+.form-group .input::placeholder {
+    color: rgba(255, 255, 255, 0.382); /* Cambia el color del marcador de posición a rojo (#FF0000) */
+}
+
+#btnEnviar{
+    background: linear-gradient(to right, black 50%, #DD4B25 50%); /* Fondo con gradiente */
+    background-size: 200% 100%; /* Tamaño del fondo degradado */
+    color: white; /* Color del texto */
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-position 0.3s ease; /* Transición de color */
+
+}
+#btnEnviar:hover{
+    background-position: -100% 0; /* Color que se mostrará al pasar el mouse */
+
+}
+
+#mapa{
+    border-radius: 5px;
+    width: 70%;
+}
+
+#infoPersonal{
+    padding: 80px 0px 80px 0px;
+}
+
+
+.contenedorInfoPersonal{
+    width: 70%;
+}
+
+.contenedorInfoPersonal .tituloIcono{
+    color: white;
+}
+
+.contenedorInfoPersonal  p{
+    color: white;
+}
+
+.contMedio{
+    border-left: 2px solid #00AAE4; border-right: 2px solid #00AAE4;
+}
+
+.contenedorInfoPersonal .tituloIcono{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.aviso{
+    color: red;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.avisoNombre{
+    display: none;
+}
+.avisoTema{
+    display: none;
+}
+.avisoMail{
+    display: none;
+}
+.avisoTelefono{
+    display: none;
+}
+.avisoDescripcion{
+    display: none;
+}
+
+
+
+/* Fin seccion fomrulario */
+
 
 #seccionHabilidades  .contenedorHabilidad .habilidad .barraHabilidad .progreso span{
    position: absolute;
@@ -510,6 +626,32 @@ table tr td:first-child{
         padding-top: 20vh;
         
     }
+
+    /* Fomrulario */
+
+    .contMedio{
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    #infoPersonal{
+        padding: 0px 0px 0px 0px;
+    }
+
+    .contenedorInfoPersonal{
+        padding: 50px 0px 50px 0px;
+    }
+
+    .contenedorInfoPersonal-m{
+        border-top: 2px solid blue; 
+        border-bottom: 2px solid blue;
+    }
+
+    #contenedorMapa{
+        padding-top: 50px;
+    }
+    /* Fin fomrulario */
+
     
 }
 
