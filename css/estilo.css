@@ -19,6 +19,10 @@
    color: #00AAE4;
 }
 
+.navbar #navbarNav li .borde{
+    border-right: 2px solid #00abe43e;
+ }
+
 #menuHamburgesa{
     background-color: #00AAE4;
 }
@@ -263,8 +267,7 @@ table tr td:first-child{
 
 #seccionHabilidades{
     position: relative;
-    padding-top: 60vh;
-    padding-bottom: 60px;
+    padding: 60vh 0px 25vh 0px;
     background-color: #303030 ;
     
 }
@@ -316,34 +319,34 @@ table tr td:first-child{
     margin: 10px; 
 }
 
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_html{
+.icono_html{
     color: #DD4B25;
 }
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_css{
+ .icono_css{
     color: #2862E9;
 }
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_js{
+.icono_js{
     color: #EFD81D;
 }
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_sql{
+.icono_sql{
     color: gray;
 }
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_angular{
+.icono_angular{
     color: #BD002E;
 }
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_bs{
+.icono_bs{
     color: #8210F5;
 }
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_comunicacion{
+.icono_comunicacion{
     color: #8210F5;
 }
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_equipo{
+.icono_equipo{
     color: #8210F5;
 }
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_adaptabilidad{
+.icono_adaptabilidad{
     color: yellow;
 }
-#seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .icono_creatividad{
+.icono_creatividad{
     color: yellow;
 }
 
@@ -459,10 +462,65 @@ table tr td:first-child{
 }
 
 
+
+/* Mis proyectos */
+#misProyectos{
+    background-color: #272727;
+    padding: 80px 0px 80px 0px;
+ 
+    
+}
+
+#misProyectos .contenedorProyectos{
+    margin-top: 45px;
+}
+
+
+#misProyectos .contenedorProyectos .proyectos{
+    background-color:#303030;
+    padding: 30px 0px 30px 0px;
+    border-radius: 50px 0px 50px 0px;
+}
+
+.tecnoUtilizada{
+    display: flex; 
+    flex-direction: row;
+    padding: 10px 0px 20px 0px;
+
+}
+
+#misProyectos .contenedorProyectos .proyectos .tituloProyecto{
+    color: #00AAE4;
+}
+
+#misProyectos .contenedorProyectos .proyectos .parrafoProyecto{
+    color: white;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+#misProyectos .contenedorProyectos .proyectos .tituloTecnologiaUtilizada{
+    font-size: 2vh;
+    color: white;
+}
+
+.tecnoUtilizada .iconos{
+    font-size: 150%;
+    flex-grow: 1;
+}
+
+
+/* Fin mis proyectos */
+
+
+
 /* Seccion formulario */
 
 #contenedorfomrulario{
     background-color: #303030   ;
+    padding:28% 0px 80px 0px ;
+    position: relative;
 }
 
 .bi{
