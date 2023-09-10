@@ -643,8 +643,8 @@ table tr td:first-child{
     }
 
     .contenedorInfoPersonal-m{
-        border-top: 2px solid blue; 
-        border-bottom: 2px solid blue;
+        border-top: 2px solid #00AAE4; 
+        border-bottom: 2px solid #00AAE4;
     }
 
     #contenedorMapa{
@@ -693,6 +693,29 @@ table tr td:first-child{
         right: -10px;
         font-size: 12px;
      
-      }
+    }
+
+    #seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos h3{
+        font-size: 12px;
+    }
+
+    #seccionHabilidades  .contenedorHabilidad .habilidad .tituloIconos .iconos{
+        font-size: 4vh;
+        margin: 10px; 
+    }
 }
 
+
+@media (max-width:340px){
+    #contenedordatosPersonales{
+        margin-top: 20%;
+        grid-template-rows: 50vh 300px;
+    }
+
+    table tr td{
+        font-size: 14px;
+        padding: 5px;
+        padding-left: 10%;
+    }
+    
+}
