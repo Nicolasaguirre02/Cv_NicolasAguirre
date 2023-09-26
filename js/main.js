@@ -27,19 +27,7 @@ formulario.addEventListener("submit", function(event){
     let resltDescripcion = validarDescripcion(descripcion, "descripcion", "avisoDescripcion");
 
     if(resltNombre && resltMail && resltTelefono && resltTema && resltDescripcion){
-        fetch("https://formsubmit.co/nicolas.aguirre02@hotmail.com", {
-                method: "POST",
-                body: new FormData(formulario)
-            })
-            .then(function(response) {
-                // Maneja la respuesta del servidor aquí
-                console.log(response);
-                alert("Formulario enviado con éxito.");
-            })
-            .catch(function(error) {
-                console.error(error);
-                alert("Hubo un error al enviar el formulario.");
-            });
+        document.getElementById('btnEnviar').click();
     }
 })
 
