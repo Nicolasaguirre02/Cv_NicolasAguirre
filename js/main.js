@@ -1,14 +1,13 @@
 /* Formulario */
 const formulario = document.getElementById("formulario");
 
-const nombre = document.getElementById("nombre");
+/* const nombre = document.getElementById("nombre");
 const mail = document.getElementById("nombre");
 const telefono = document.getElementById("nombre");
 const tema = document.getElementById("nombre");
-const descripcion = document.getElementById("nombre");
+const descripcion = document.getElementById("nombre"); */
 
 formulario.addEventListener("submit", function(event){
-    event.preventDefault();
 
     const nombre = document.getElementById("nombre").value.trim();
     const mail = document.getElementById("mail").value.trim();
@@ -26,10 +25,8 @@ formulario.addEventListener("submit", function(event){
 
     let resltDescripcion = validarDescripcion(descripcion, "descripcion", "avisoDescripcion");
 
-    if(resltNombre && resltMail && resltTelefono && resltTema && resltDescripcion){
-        return true
-    }else{
-        return false
+    if(!resltNombre && !resltMail && !resltTelefono && !resltTema && !resltDescripcion){
+        event.preventDefault();
     }
 })
 
