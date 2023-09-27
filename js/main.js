@@ -27,7 +27,9 @@ formulario.addEventListener("submit", function(event){
     let resltDescripcion = validarDescripcion(descripcion, "descripcion", "avisoDescripcion");
 
     if(resltNombre && resltMail && resltTelefono && resltTema && resltDescripcion){
-        document.getElementById('btnEnviar').click();
+        return true
+    }else{
+        return false
     }
 })
 
